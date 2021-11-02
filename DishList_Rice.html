@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- Template by html.am -->
+<html lang="en">
+	<head>
+    <meta charset="UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Integrating jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="dishlist.css"/>
+        <link rel="stylesheet" href="dishlist_subdomains.css"/>
+        <title>dishlist/rice</title>	
+	</head>
+	<body>
+		<div class="outline">
+      <h1>dishlist</h1>
+            <div class="dropdown">
+                <button onclick="myFunction()" id="dropbtn">Reisgerichte</button>
+
+                <div id="myDropdown" class="dropdown-content">
+                  <a id="myDropdownReisFleisch" href="('https://www.google.de')" style="text-decoration: none; color: white; margin-left: 1%;">Mit Fleisch</a>
+                  <a id="myDropdownReisVegetarisch"href="#" style="text-decoration: none; color: white;">Vegetarisch</a>
+                  <a id="myDropdownReisVegan"href="#" style="text-decoration: none; color: white;">Vegan</a>
+                </div>
+                <div class="ReisFleischListe" id="ReisFleischListe">
+                  <div class="elements">
+                  <form autocomplete="off">
+                    <div class="input">
+                      <label for="dish"></label>
+                      <input type="text" id="dish" placeholder ="Gericht" value=""/>
+                    </div>
+                    <div class="input">
+                      <label for="descr"></label>
+                      <input type="text" id="descr" placeholder="Sonstiges" value=""/>
+                    </div>
+                    <div class="input">
+                      <label for="weblink"></label>
+                      <input type="text" id="weblink" placeholder="Weblink" value=""/>
+                    </div>
+                    <div class="input">
+                      <button id="btnEntry2">Rezept anlegen</button>
+                    </div>
+                    <div id="msg">
+                      <pre></pre>
+                   </div>
+
+                  </form>
+                </div> 
+                </div>
+               <!--  <div class="ReisVegetarischListe" id="ReisVegetarischListe">Name of the dish | Description | Source</div>
+                <div class="ReisvegainListe" id="ReisVeganListe">Name of the dish | Description | Source</div> -->
+            </div> 	
+
+		</div>
+        
+		<script src="DishList_Subdomains.js"></script>
+	</body>
+</html>

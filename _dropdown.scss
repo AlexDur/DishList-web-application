@@ -1,0 +1,62 @@
+#dropbtn {
+    margin-top: 5%;
+    font-size: 3rem;
+    border: none;
+    background-color: transparent;
+    color: $white;
+    margin-bottom: 15px;
+}
+
+
+.dropdown {
+    top:10%;
+    margin-left: 5%;
+    position: absolute;
+    /* display: inline-block; */
+    top: 10px;
+    left: 50px;
+    color: $white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+
+}
+
+@mixin dropDown {
+    background-color: $blue;
+    border-radius: 20px;
+    
+}
+
+#myDropdown{
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+
+#myDropdownReisFleisch:hover, #myDropdownReisFleisch:focus {
+    @include dropDown()
+  }
+
+#myDropdownReisVegetarisch:hover, #myDropdownReisVegetarisch:focus {
+    @include dropDown()
+}  
+
+
+#myDropdownReisVegan:hover, #myDropdownReisVegan:focus {
+    @include dropDown()
+}
+
+/* Links inside the dropdown */
+/* .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    
+  } */
+
+  /* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: $blue}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}

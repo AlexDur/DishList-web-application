@@ -1,0 +1,41 @@
+/* $blue:#0970b4;
+$orange:rgb(241, 158, 4);
+$white: white; */
+h1 {
+  position: absolute;
+  top: 20%;
+  color: #0970b4;
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+}
+
+.outline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #f19e04;
+}
+.outline input {
+  color: #0970b4;
+  background-color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  border-color: #0970b4;
+  border-width: 1px;
+  margin-left: -1px;
+}
+.outline input:hover {
+  background-color: #0970b4;
+  color: white;
+}
+
+.tiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  height: 200px;
+  width: 1200px;
+}/*# sourceMappingURL=dishlist.css.map */

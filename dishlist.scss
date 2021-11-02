@@ -1,0 +1,61 @@
+//1 Mixins 1.1 Mixins-$parameter in parantheses 2 Nesting 
+//3 Partials (with underscore) 4 Modules 5 Extend/Inheritance
+
+@import "./variables_dishlist";
+/* $blue:#0970b4;
+$orange:rgb(241, 158, 4);
+$white: white; */
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin pageFormat {
+    width: 100%;
+    height: 100vh;
+}
+
+@mixin appTitle (){
+    position: absolute;
+    top: 20%;
+    color:$blue;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+
+}
+
+h1{
+    @include appTitle() 
+      
+}
+
+.outline {
+    @include flexCenter();
+    @include pageFormat();
+    background-color: $orange;
+    input {
+        color: $blue;
+        background-color: $white;
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+        font-weight: bolder;
+        border-color: $blue;
+        border-width: 1px;
+        margin-left: -1px;
+        &:hover{
+            background-color: $blue;
+            color: white;
+            }
+        }
+    } 
+  
+  .tiles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: auto; 
+    height:200px;
+    width: 1200px;
+
+    }
