@@ -18,7 +18,7 @@ import rice from "./900x600/rice.png";
 import noodle from "./900x600/noodle.png";
 import international_kitchens from "./900x600/international_kitchens.png";
 import desert from "./900x600/desert.png";
-import { hover } from "@testing-library/user-event/dist/hover";
+/* import { hover } from "@testing-library/user-event/dist/hover"; */
 
 const styles = {
   centerDiv: {
@@ -49,7 +49,7 @@ const LandingPage = () => {
       <Grid container spacing={2}>
         <Grid item xs={3}>
           <Link to="rice/" style={styles.link}>
-            <Card sx={{ maxWidth: 500, maxHeight: 400 }}>
+            <Card>
               <CardMedia component="img" width="400" image={rice} alt="rice" />
               <CardContent style={{ background: "orange", color: "white" }}>
                 <Typography styles={styles.description}>
@@ -61,7 +61,7 @@ const LandingPage = () => {
         </Grid>
         <Grid item xs={3}>
           <Link to="noodle/" style={styles.link}>
-            <Card sx={{ maxWidth: 500, maxHeight: 400 }}>
+            <Card>
               <CardMedia
                 component="img"
                 width="400"
@@ -77,7 +77,7 @@ const LandingPage = () => {
           </Link>
         </Grid>
         <Grid item xs={3}>
-          <Card sx={{ maxWidth: 500, maxHeight: 400 }}>
+          <Card>
             <CardMedia
               component="img"
               width="400"
@@ -92,7 +92,7 @@ const LandingPage = () => {
           </Card>
         </Grid>
         <Grid item xs={3}>
-          <Card sx={{ maxWidth: 500, maxHeight: 400 }}>
+          <Card>
             <CardMedia component="img" width="400" image={desert} alt="rice" />
             <CardContent style={{ background: "orange", color: "white" }}>
               <Typography styles={styles.description}>Desserts</Typography>

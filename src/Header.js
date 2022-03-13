@@ -2,8 +2,9 @@ const styles = {
   header: {
     marginTop: 50,
     fontSize: 30,
-    marginRight: -1600,
+
     color: "blue",
+    maxWidth: "100%",
   },
 };
 

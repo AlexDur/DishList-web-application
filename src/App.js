@@ -1,3 +1,4 @@
+//TODO: Add background-color to landing page (gradient orange - see previous project version)
 //TODO: Add hover- and active - effect for card
 //TODO: Create the rice page adding items like dropdown menu, list (like in Data Import Item)
 
