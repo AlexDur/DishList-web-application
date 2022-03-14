@@ -26,10 +26,10 @@ const styles = {
     width: "50%",
   },
   description: {
-    color: "blue",
+    color: "white",
     fontFamily: "fantasy",
     fontSize: 20,
-    backgroundColor: "orange",
+    backgroundColor: "#FFA500",
   },
   link: {
     textDecoration: "none",
@@ -77,27 +77,36 @@ const LandingPage = () => {
           </Link>
         </Grid>
         <Grid item xs={3}>
-          <Card>
-            <CardMedia
-              component="img"
-              width="400"
-              image={international_kitchens}
-              alt="rice"
-            />
-            <CardContent style={{ background: "orange", color: "white" }}>
-              <Typography styles={styles.description}>
-                Internationale Küchen
-              </Typography>
-            </CardContent>
-          </Card>
+          <Link to="international_kitchens/" style={styles.link}>
+            <Card>
+              <CardMedia
+                component="img"
+                width="400"
+                image={international_kitchens}
+                alt="international_kitchens"
+              />
+              <CardContent style={{ background: "orange", color: "white" }}>
+                <Typography styles={styles.description}>
+                  Internationale Küche
+                </Typography>
+              </CardContent>
+            </Card>
+          </Link>
         </Grid>
         <Grid item xs={3}>
-          <Card>
-            <CardMedia component="img" width="400" image={desert} alt="rice" />
-            <CardContent style={{ background: "orange", color: "white" }}>
-              <Typography styles={styles.description}>Desserts</Typography>
-            </CardContent>
-          </Card>
+          <Link to="dessert/" style={styles.link}>
+            <Card>
+              <CardMedia
+                component="img"
+                width="400"
+                image={desert}
+                alt="dessert"
+              />
+              <CardContent style={{ background: "orange", color: "white" }}>
+                <Typography styles={styles.description}>Desserts</Typography>
+              </CardContent>
+            </Card>
+          </Link>
         </Grid>
       </Grid>
     </Box>

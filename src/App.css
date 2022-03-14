@@ -10,6 +10,11 @@
   pointer-events: none;
 }
 
+h1 {
+  color: "#00BFFF";
+  font-weight: 500;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -39,10 +44,8 @@
     transform: rotate(360deg);
   }
 }
-/* 
-h1 {
-  color: "red";
+
+.subpages_headers {
+  color: "orange";
   font-size: 30;
-  font-weight: 500;
-  margin-left: -1400;
-} */
+}
