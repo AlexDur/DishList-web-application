@@ -1,6 +1,8 @@
-import logo from "./logo.svg";
+//TODO: Add Navbar
+//Todo: Add recepi count
+
 import "./App.css";
-import AddDish from "./AddDish";
+import AddDish from "./AddDish/AddDish.jsx";
 import Dishlist from "./Dishlist";
 
 function App() {

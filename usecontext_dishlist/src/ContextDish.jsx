@@ -4,7 +4,15 @@ export const ContextDish = createContext();
 
 export const DishProvider = (props) => {
   const [dishes, setDishes] = useState([
-    { name: "", price: "", id: Math.random() * 1000 },
+    {
+      link: "",
+      name: "",
+      rating: "",
+      price: "",
+      difficulty: "",
+      rectemperature: "",
+      id: Math.floor(Math.random() * 10000),
+    },
   ]);
 
   return (

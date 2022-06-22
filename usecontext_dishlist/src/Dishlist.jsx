@@ -8,7 +8,15 @@ const Dishlist = () => {
   return (
     <div>
       {dishes.map((dish) => (
-        <Dish name={dish.name} price={dish.price} key={dish.id} />
+        <Dish
+          name={dish.name}
+          price={dish.price}
+          link={dish.link}
+          rating={dish.rating}
+          difficulty={dish.difficulty}
+          rectemperature={dish.rectemperature}
+          key={dish.id}
+        />
       ))}
     </div>
   );
